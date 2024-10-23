@@ -1,5 +1,5 @@
 #include <vector>
-#include <cmath>  // for std::sqrt
+#include <cmath>  
 #include "Divisors.h"
 
 std::vector<unsigned long long> divisors(unsigned long long number)
@@ -11,9 +11,9 @@ std::vector<unsigned long long> divisors(unsigned long long number)
     {
         if (number % i == 0)
         {
-            result.push_back(i);  // i is a divisor
+            result.push_back(i);  
             if (i != number / i)
-                result.push_back(number / i);  // number / i is also a divisor
+                result.push_back(number / i);  
         }
     }
 
